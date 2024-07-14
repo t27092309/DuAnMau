@@ -146,7 +146,9 @@
 }
 
 .loginForm button[type='submit'],
-.formContent input[type='submit'] {
+.formContent input[type='submit'],
+.formContent input[type='reset'],
+.formContent button[type='submit'] {
 	border-radius: 5px;
 	padding: 5px 10px;
 	background-color: rgb(235, 235, 235);
@@ -154,7 +156,9 @@
 }
 
 .loginForm button[type='submit']:hover,
-.formContent button[type='submit']:hover {
+.formContent button[type='submit']:hover,
+.formContent input[type='submit']:hover,
+.formContent input[type='reset']:hover {
 	background-color: rgb(209, 209, 209);
 	border: 1px solid rgb(177, 177, 177);
 	cursor: pointer;
