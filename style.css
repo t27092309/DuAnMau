@@ -17,7 +17,8 @@
 .mb {
 	margin-bottom: 30px;
 }
-.mb10{
+
+.mb10 {
 	margin-bottom: 10px;
 }
 
@@ -125,42 +126,83 @@
 	min-height: 200px;
 	padding: 20px;
 }
-.loginForm{
+
+.loginForm {
 	line-height: 150%;
 }
-.loginForm input[type = 'text'],
-.loginForm input[type = 'password']{
+
+.loginForm input[type='text'],
+.loginForm input[type='password'],
+.formContent input[type='text'] {
 	width: 100%;
 	border: 1px #CCC solid;
 	padding: 5px 10px;
 	border-radius: 5px;
 }
-.loginForm input[type = 'checkbox']{
+
+.loginForm input[type='checkbox'] {
 	border: 1px solid #CCC;
 	border-radius: 5px;
 }
-.loginForm button[type = 'submit']{
+
+.loginForm button[type='submit'],
+.formContent input[type='submit'] {
 	border-radius: 5px;
 	padding: 5px 10px;
 	background-color: rgb(235, 235, 235);
 	border: 1px solid rgb(177, 177, 177);
 }
-.loginForm button[type = 'submit']:hover{
+
+.loginForm button[type='submit']:hover,
+.formContent button[type='submit']:hover {
 	background-color: rgb(209, 209, 209);
 	border: 1px solid rgb(177, 177, 177);
 	cursor: pointer;
 }
-.loginForm li a{
+
+.loginForm li a {
 	color: teal;
 	text-decoration: none;
 }
-.loginForm li a:hover{
+
+.loginForm li a:hover {
 	color: rgb(0, 92, 92);
 }
 
 .boxContent2 {
 	border: 1px solid #ccc;
 	min-height: 200px;
+	background-color: #EEE;
+}
+
+.menudoc ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+}
+
+.menudoc ul li {
+	padding: 10px 20px;
+	background-color: #EEE;
+	border-bottom: 1px solid #CCC;
+}
+
+.menudoc ul li a {
+	color: #666;
+	text-decoration: none;
+}
+
+.menudoc ul li:hover {
+	background-color: #CCC;
+}
+
+.searchBox input[type='text'] {
+	width: 100%;
+	padding: 5px 10px;
+	background-color: #FFF;
+	border: 1px #CCC solid;
+	border-radius: 5px;
 }
 
 .boxFooter {
@@ -168,7 +210,28 @@
 	background-color: #eee;
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	border: 1px solid #ccc;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+
+.top10 img {
+	width: 20%;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(206, 206, 206);
+}
+
+.top10 a {
+	color: #666;
+	text-decoration: none;
+}
+
+.top10 a:hover {
+	color: #000;
+	text-decoration: underline;
 }
 
 .footer {
@@ -178,4 +241,31 @@
 	color: blue;
 	border-radius: 5px;
 	padding: 20px;
+}
+
+/* Admin */
+
+.headerAdmin {
+	background-color: #cacaca;
+	border: 1px solid #CCC;
+	color: #666;
+	border-radius: 5px;
+	padding: 0px 20px;
+}
+
+.headerAdmin h1 {
+	font-size: 2vw;
+}
+
+.formTitle {
+	background-color: #e2e2e2;
+	border: 1px solid #CCC;
+	color: #666;
+	border-radius: 5px;
+	padding: 0 20px;
+}
+
+.formContent {
+	padding: 20px 0px;
+
 }
