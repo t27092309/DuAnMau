@@ -132,8 +132,7 @@
 }
 
 .loginForm input[type='text'],
-.loginForm input[type='password'],
-.formContent input[type='text'] {
+.loginForm input[type='password']{
 	width: 100%;
 	border: 1px #CCC solid;
 	padding: 5px 10px;
@@ -145,20 +144,14 @@
 	border-radius: 5px;
 }
 
-.loginForm button[type='submit'],
-.formContent input[type='submit'],
-.formContent input[type='reset'],
-.formContent button[type='submit'] {
+.loginForm button[type='submit']{
 	border-radius: 5px;
 	padding: 5px 10px;
 	background-color: rgb(235, 235, 235);
 	border: 1px solid rgb(177, 177, 177);
 }
 
-.loginForm button[type='submit']:hover,
-.formContent button[type='submit']:hover,
-.formContent input[type='submit']:hover,
-.formContent input[type='reset']:hover {
+.loginForm button[type='submit']:hover{
 	background-color: rgb(209, 209, 209);
 	border: 1px solid rgb(177, 177, 177);
 	cursor: pointer;
