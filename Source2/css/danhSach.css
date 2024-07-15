@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 1vw;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.row {
+    float: left;
+    width: 100%;
+}
+
+.mb {
+    margin-bottom: 30px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mr {
+    margin-right: 2%;
+}
+
+.demo {
+    background-color: antiquewhite;
+    min-height: 100px;
+}
+
+.header {
+    background-color: aquamarine;
+    border: 1px #090 solid;
+    font-size: 1.2vw;
+    color: blue;
+    border-radius: 5px;
+}
+
+.header h1 {
+    margin: 10px 20px;
+}
+
+.menu {
+    background-color: #18181a;
+    color: #e2dfd2;
+    border-radius: 5px;
+}
+
+.menu ul {
+    padding: 0 15px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0 15px;
+}
+
+.menu ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: white;
+    font-size: larger;
+    transition: 0.5s;
+}
+
+.formContent input[type='text'] {
+    width: 100%;
+    border: 1px #CCC solid;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.formContent input[type='submit'],
+.formContent input[type='reset'],
+.formContent input[type='button'] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: rgb(235, 235, 235);
+    border: 1px solid rgb(177, 177, 177);
+}
+
+.formContent input[type='button']:hover,
+.formContent input[type='submit']:hover,
+.formContent input[type='reset']:hover {
+    background-color: rgb(209, 209, 209);
+    border: 1px solid rgb(177, 177, 177);
+    cursor: pointer;
+}
+
+.formDanhSach table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #999;
+}
+
+.formDanhSach table th:nth-child(1) {
+    width: 10%;
+    padding: 20px 0px;
+    background-color: #ccc;
+}
+
+.formDanhSach table th:nth-child(2) {
+    width: 30%;
+    background-color: #aaaaaa;
+}
+
+.formDanhSach table th:nth-child(3) {
+    width: 40%;
+    background-color: #ccc;
+}
+
+.formDanhSach table th:nth-child(4) {
+    width: 20%;
+    background-color: #aaaaaa;
+}
+.formDanhSach table td{
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+
+
+}
