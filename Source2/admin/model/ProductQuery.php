@@ -20,6 +20,93 @@ class ProductQuery{
         $this->pdo = null;
     }
 
+    public function all(){
+        try{
+            $sql = "SELECT * FROM product";
+            $data = $this->pdo->query($sql)->fetchAll();
+
+            foreach($data as $value){
+                $product = new Product();
+                $product->id = $value['id'];
+                $product->name = $value['name'];
+                $product->price = $value['price'];
+                $product->img = $value['img'];
+                $product->description = $value['description'];
+                $product->view = $value['view'];
+                $product->idcategory = $value['idcategory'];
+                
+                $list[] = $product;
+            }
+            return $list;
+            
+        }catch(Exception $error){
+            echo "Error: " . $error->getMessage();
+            echo "<br>";
+        }
+    }
+    public function find($id){
+        try{
+            $sql = "SELECT * FROM product WHERE id = $id";
+            $data = $this->pdo->query($sql)->fetch();
+
+            if($data !== false){
+                $product = new Product();
+                $product->id = $data['id'];
+                $product->name = $data['name'];
+                $product->price = $data['price'];
+                $product->img = $data['img'];
+                $product->description = $data['description'];
+                $product->view = $data['view'];
+                $product->idcategory = $data['idcategory'];
+                return $product;
+            }
+            
+        }catch(Exception $error){
+            echo "Error: " . $error->getMessage();
+            echo "<br>";
+        }
+    }
+    public function insert(Product $product){
+        try{
+            $sql = "INSERT INTO product(name, price, img, description, view, idcategory) VALUES('".$product->name."', '".$product->price."', '".$product->img."', '".$product->description."', '".$product->view."', '".$product->idcategory."');";
+            $data = $this->pdo->exec($sql);
+            
+            if($data === 1){
+                return "success";
+            }
+        }catch(Exception $error){
+            echo "Error: " . $error->getMessage();
+            echo "<br>";
+        }
+    }
+    public function update($id, Product $product){
+        try{
+            $sql = "UPDATE product SET name = '".$product->name."', price = '".$product->price."', description = '".$product->description."', view = '".$product->view."', idcategory = '".$product->idcategory."' WHERE id = $id";
+            $data = $this->pdo->exec($sql);
+
+            if($data === 1 || $data === 0){
+                return "success";
+            }
+            
+        }catch(Exception $error){
+            echo "Error: " . $error->getMessage();
+            echo "<br>";
+        }
+    }
+    public function delete($id){
+        try{
+            $sql = "DELETE FROM product WHERE id = $id";
+            $data = $this->pdo->exec($sql);
+
+            if($data === 1){
+                return "success";
+            }
+            
+        }catch(Exception $error){
+            echo "Error: " . $error->getMessage();
+            echo "<br>";
+        }
+    }
     
 }
 

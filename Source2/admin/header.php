@@ -15,7 +15,7 @@
         </div>
         <div class="row menu mb">
             <ul>
-                <li><a href="index.php?act=category-list">Trang chủ</a></li>
+                <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=category-list">Danh mục</a></li>
                 <li><a href="index.php?act=product-list">Hàng hóa</a></li>
                 <li><a href="index.php?act=list-client">Khách hàng</a></li>

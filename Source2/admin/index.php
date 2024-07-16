@@ -8,22 +8,22 @@ include_once "controller/ProductController.php";
 
 
 include "header.php";
-if(isset($_GET['act'])){
-    $act = $_GET['act'];
-    
-}
+
 
 include "home.php";
 include "footer.php";
 
 
-
+$act = "";
+if (isset($_GET['id'])) {
+    $id = $_GET['id'];
+}
 $act = "";
 if (isset($_GET["act"])) {
     $act = $_GET["act"];
     switch ($act) {
         case "":
-            // header('location:index.php');
+            header('location:index.php');
             break;
     
         case "category-list":
@@ -37,12 +37,12 @@ if (isset($_GET["act"])) {
             break;
         case "category-update":
             $categoryCtrl = new CategoryController();
-            $categoryCtrl->showUpdate();
+            $categoryCtrl->showUpdate($id);
             break;
     
         case "category-delete":
             $categoryCtrl = new CategoryController();
-            $categoryCtrl->showDelete();
+            $categoryCtrl->showDelete($id);
             break;
     
         case "category-detail":
@@ -62,17 +62,17 @@ if (isset($_GET["act"])) {
     
         case "product-update":
             $proCtrl = new ProductController();
-            $proCtrl->showUpdate();
+            $proCtrl->showUpdate($id);
             break;
     
         case "product-delete":
             $proCtrl = new ProductController();
-            $proCtrl->showDelete();
+            $proCtrl->showDelete($id);
             break;
     
         case "product-detail":
             $proCtrl = new ProductController();
-            $proCtrl->showDetail();
+            $proCtrl->showDetail($id);
             break;
         case "list-client":
             $proCtrl = new ProductController();
@@ -95,9 +95,6 @@ if (isset($_GET["act"])) {
     }
     
 }
-$act = "";
-if (isset($_GET['id'])) {
-    $id = $_GET['id'];
-}
+
 
 

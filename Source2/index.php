@@ -20,6 +20,8 @@
                 <li><a href="#">Liên hệ</a></li>
                 <li><a href="#">Góp ý</a></li>
                 <li><a href="#">Hỏi đáp</a></li>
+                <li><a href="login.php">Trang quản trị</a></li>
+
             </ul>
         </div>
         <div class="row mb">
