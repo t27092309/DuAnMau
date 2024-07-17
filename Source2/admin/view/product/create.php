@@ -25,7 +25,7 @@
 
         <div style="margin-bottom: 16px;">
             <span>Nhập ảnh:</span>
-            <input type="text" name="img" value="<?= $product->img ?>">
+            <input type="file" name="img" value="<?= $product->img ?>">
         </div>
 
         <div style="margin-bottom: 16px;">

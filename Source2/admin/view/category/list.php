@@ -14,6 +14,7 @@
             background-color: rgb(235, 235, 235);
             border: 1px solid rgb(177, 177, 177);
         }
+
         input[type='button']:hover,
         input[type='submit']:hover,
         input[type='reset']:hover {
@@ -21,29 +22,34 @@
             border: 1px solid rgb(177, 177, 177);
             cursor: pointer;
         }
-        
+
         table {
             width: 100%;
             border-collapse: collapse;
             border: 1px solid #999;
         }
+
         table th:nth-child(1) {
             width: 10%;
             padding: 20px 0px;
             background-color: #ccc;
         }
+
         table th:nth-child(2) {
             width: 30%;
             background-color: #aaaaaa;
         }
+
         table th:nth-child(3) {
             width: 40%;
             background-color: #ccc;
         }
+
         table th:nth-child(4) {
             width: 20%;
             background-color: #aaaaaa;
         }
+
         table td {
             padding: 10px 20px;
             border: 1px solid #ccc;
@@ -60,7 +66,7 @@
                 <th></th>
                 <th>ID</th>
                 <th>Name</th>
-                <th><a href="?act=category-create">Thêm mới</a></th>
+                <th><a href="?act=category-create"><input type="button" value="Thêm mới"></a></th>
             </tr>
         </thead>
         <tbody>
@@ -70,8 +76,8 @@
                     <td><?= $category->id ?></td>
                     <td><?= $category->name ?></td>
                     <td>
-                        <a href="?act=category-update&id=<?= $category->id ?>">Sửa</a>
-                        <a href="?act=category-delete&id=<?= $category->id ?>" onclick="return confirm('Chắc chắn xóa')">Xóa</a>
+                        <a href="?act=category-update&id=<?= $category->id ?>"><input type="button" value="Sửa"></a>
+                        <a href="?act=category-delete&id=<?= $category->id ?>" onclick="return confirm('Chắc chắn xóa')"><input type="button" value="Xóa"></a>
                     </td>
                 </tr>
             <?php endforeach ?>

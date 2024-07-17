@@ -26,12 +26,19 @@ class ProductController
         $tbThanhCong = "";
 
         if (isset($_POST['submitForm'])) {
-            var_dump($_POST);
-            echo "<hr>";
+            // var_dump($_POST);
+            // echo "<hr>";
+            
 
             $product->name = trim($_POST['name']);
             $product->price = $_POST['price'];
-            $product->img = $_POST['img'];
+
+            $targetDir = "uploads/";
+            $targetFile = $targetDir.basename($_FILES['img']['name']);
+            if(move_uploaded_file($_FILES['img']['tmp_name'], $targetFile)){
+                
+            }
+            
             $product->description = $_POST['description'];
             $product->view = $_POST['view'];
             $product->idcategory = $_POST['idcategory'];
@@ -99,7 +106,7 @@ class ProductController
         }
 
 
-        include "view/product/create.php";
+        include "view/product/update.php";
     }
     public function showDetail()
     {

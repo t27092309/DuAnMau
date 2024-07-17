@@ -88,7 +88,7 @@ class CategoryController
         }
 
 
-        include "view/category/create.php";
+        include "view/category/update.php";
     }
     public function showDetail()
     {

@@ -61,7 +61,7 @@
             background-color: #aaaaaa;
         }
         table th:nth-child(9) {
-            width: 10%;
+            width: 12%;
             background-color: #aaaaaa;
         }
         table td {
@@ -101,8 +101,8 @@
                         <td><?= $product->view ?></td>
                         <td><?= $product->idcategory ?></td>
                         <td>
-                            <a href="?act=product-update&id=<?= $product->id ?>">Sửa</a>
-                            <a href="?act=product-delete&id=<?= $product->id ?>" onclick="return confirm('Chắc chắn xóa???')">Xóa</a>
+                            <a href="?act=product-update&id=<?= $product->id ?>"><input type="button" value="Sửa"></a>
+                            <a href="?act=product-delete&id=<?= $product->id ?>" onclick="return confirm('Chắc chắn xóa???')"><input type="button" value="Xóa"></a>
                         </td>
                     </tr>
                 <?php endforeach ?>
