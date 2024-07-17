@@ -1,0 +1,55 @@
+<mxfile host="app.diagrams.net" modified="2024-07-17T14:02:00.655Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="2nhuFwMopNq5ahMfJWef" version="24.7.0" type="device">
+  <diagram name="Page-1" id="4ug7MO3VFJdfSP1m2l08">
+    <mxGraphModel dx="1036" dy="595" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-1" value="Admin" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="40" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-2" value="" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-3" value="Quản lí hàng" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="250" y="220" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-5" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;dashPattern=12 12;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="tLcMmVKPbqr9YysQVYcd-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="239.5" as="sourcePoint" />
+            <mxPoint x="480" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-6" value="Include" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="tLcMmVKPbqr9YysQVYcd-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-7" value="Thêm, sửa hàng hóa" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-9" value="Thêm, sửa danh mục" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="200" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=12 12;" edge="1" parent="1" source="tLcMmVKPbqr9YysQVYcd-2" target="tLcMmVKPbqr9YysQVYcd-9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="240" as="sourcePoint" />
+            <mxPoint x="450" y="240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-11" value="Include" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="tLcMmVKPbqr9YysQVYcd-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-13" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tLcMmVKPbqr9YysQVYcd-2" target="tLcMmVKPbqr9YysQVYcd-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="240" as="sourcePoint" />
+            <mxPoint x="470" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-14" value="Include" style="edgeLabel;resizable=0;html=1;;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="tLcMmVKPbqr9YysQVYcd-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="tLcMmVKPbqr9YysQVYcd-15" value="Quản lí lượt view, cmt,..." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -88,7 +88,7 @@ class CategoryController
         }
 
 
-        include "view/product/create.php";
+        include "view/category/create.php";
     }
     public function showDetail()
     {

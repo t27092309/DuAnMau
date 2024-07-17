@@ -70,7 +70,7 @@ class CategoryQuery{
     }
     public function update($id, Category $category){
         try{
-            $sql = "UPDATE category SET name = '".$category->name."' ";
+            $sql = "UPDATE category SET name = '".$category->name."' WHERE id = $id ";
             $data = $this->pdo->exec($sql);
 
             if($data === 1 || $data === 0){
