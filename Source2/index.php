@@ -54,52 +54,6 @@
                         <a href="#">Điện thoại</a>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                </div>
             </div>
 
             <div class="rbox">

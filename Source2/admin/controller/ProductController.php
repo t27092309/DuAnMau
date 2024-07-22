@@ -28,17 +28,10 @@ class ProductController
         if (isset($_POST['submitForm'])) {
             // var_dump($_POST);
             // echo "<hr>";
-            
+
 
             $product->name = trim($_POST['name']);
             $product->price = $_POST['price'];
-
-            $targetDir = "uploads/";
-            $targetFile = $targetDir.basename($_FILES['img']['name']);
-            if(move_uploaded_file($_FILES['img']['tmp_name'], $targetFile)){
-                
-            }
-            
             $product->description = $_POST['description'];
             $product->view = $_POST['view'];
             $product->idcategory = $_POST['idcategory'];
@@ -47,6 +40,14 @@ class ProductController
                 $tbLoi = "Tiêu đề và giá không được bỏ trống";
             }
 
+            var_dump($_FILES);
+            $thamSo1 = $_FILES['file_upload']['tmp_name'];
+            $thamSo2 = "../uploads/" . $_FILES['file_upload']['name'];
+            if (move_uploaded_file($thamSo1, $thamSo2)) {
+                $product->img = "uploads/" . $_FILES['file_upload']['name'];
+            } else {
+                $tbLoi = "Upload failed";
+            }
             if ($tbLoi == "") {
                 $productCreate = $this->productQuery->insert($product);
                 if ($productCreate == "success") {

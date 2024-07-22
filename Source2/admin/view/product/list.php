@@ -30,7 +30,7 @@
         table th:nth-child(1) {
             width: 5%;
             padding: 20px 0px;
-            background-color: #ccc;
+            background-color: #aaaaaa;
         }
         table th:nth-child(2) {
             width: 5%;
@@ -38,7 +38,7 @@
         }
         table th:nth-child(3) {
             width: 20%;
-            background-color: #ccc;
+            background-color: #aaaaaa;
         }
         table th:nth-child(4) {
             width: 15%;
@@ -96,7 +96,11 @@
                         <td><?= $product->id ?></td>
                         <td><?= $product->name ?></td>
                         <td><?= $product->price ?></td>
-                        <td><?= $product->img ?></td>
+                        <td>
+                            <div style="height: 100%; width:100%;">
+                                <img style="max-height: 100%; max-width: 100%" src="<?=   $product->img ?>">
+                            </div>
+                        </td>
                         <td><?= $product->description ?></td>
                         <td><?= $product->view ?></td>
                         <td><?= $product->idcategory ?></td>
