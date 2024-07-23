@@ -86,13 +86,21 @@ class ProductController
             if (isset($_POST['submitForm'])) {
                 $product->name = trim($_POST['name']);
                 $product->price = $_POST['price'];
-                $product->img = $_POST['img'];
                 $product->description = $_POST['description'];
                 $product->view = $_POST['view'];
                 $product->idcategory = $_POST['idcategory'];
 
                 if ($product->name === "" || $product->price === "") {
                     $tbLoi = "Tiêu đề và giá không được bỏ trống";
+                }
+
+                var_dump($_FILES);
+                $thamSo1 = $_FILES['file_upload']['tmp_name'];
+                $thamSo2 = "../uploads/" . $_FILES['file_upload']['name'];
+                if (move_uploaded_file($thamSo1, $thamSo2)) {
+                    $product->img = "uploads/" . $_FILES['file_upload']['name'];
+                } else {
+                    $tbLoi = "Upload failed";
                 }
 
                 if ($tbLoi == "") {

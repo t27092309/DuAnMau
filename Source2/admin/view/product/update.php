@@ -24,8 +24,13 @@
         </div>
 
         <div style="margin-bottom: 16px;">
-            <span>Nhập ảnh:</span>
+            <span>Nhập đường dẫn ảnh:</span>
             <input type="text" name="img" value="<?= $product->img ?>">
+
+            <div>
+                <span>Chọn ảnh:</span>
+                <input type="file" name="file_upload">
+            </div>
         </div>
 
         <div style="margin-bottom: 16px;">

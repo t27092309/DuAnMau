@@ -27,8 +27,9 @@
             $_SESSION["username"] = $username;
             header("location:admin/index.php");
         }
-    }   
+    }
     ?>
+
 </body>
 
 </html>
