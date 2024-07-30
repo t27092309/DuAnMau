@@ -1,19 +1,4 @@
-<div class="row">
-    <div class="row formTitle">
-        <h1>Control Panel</h1>
-    </div>
-    <?php
-    foreach ($homeProductList as $product)
-        extract($product);
-    echo '<div class="boxPro mr">
-            <div class="row img">
-                <img src="img/iphone-15-green-1-650x650.webp" alt="">
-            </div>
-                <p>$30</p>
-                <a href="#">Điện thoại</a>
-                    </div>';
-    ?>
-    <!-- <div class="row mb">
+<div class="row mb">
             <div class="lbox mr">
                 <div class="row">
                     <div class="banner">
@@ -21,6 +6,7 @@
                     </div>
                 </div>
                 <div class="row">
+                    <?php foreach($productList as $product): ?>
                     <div class="boxPro mr">
                         <div class="row img">
                             <img src="img/iphone-15-green-1-650x650.webp" alt="">
@@ -28,66 +14,7 @@
                         <p>$30</p>
                         <a href="#">Điện thoại</a>
                     </div>
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro mr">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
-                    <div class="boxPro">
-                        <div class="row img">
-                            <img src="img/iphone-15-green-1-650x650.webp" alt="">
-                        </div>
-                        <p>$30</p>
-                        <a href="#">Điện thoại</a>
-                    </div>
+                    <?php endforeach ?>
                 </div>
             </div>
 
@@ -193,4 +120,6 @@
 
             </div>
         </div>
-</div> -->
+        <div class="row footer mb">
+            Copyright
+        </div>

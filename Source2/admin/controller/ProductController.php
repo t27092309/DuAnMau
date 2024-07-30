@@ -19,6 +19,10 @@ class ProductController
 
         include "view/product/list.php";
     }
+    public function homeShowListProduct(){
+        $homeProductList = $this->productQuery->Home();
+        include "../view/home.php";
+    }
     public function showCreate()
     {
         $product = new Product();

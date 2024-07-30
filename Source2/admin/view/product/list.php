@@ -100,7 +100,7 @@
                             <div style="height: 100%; width:100%;">
                                 <img style="max-height: 100%; max-width: 100%" src="<?=   $product->img ?>">
                             </div>
-                        </td>
+                        </td>   
                         <td><?= $product->description ?></td>
                         <td><?= $product->view ?></td>
                         <td><?= $product->idcategory ?></td>
