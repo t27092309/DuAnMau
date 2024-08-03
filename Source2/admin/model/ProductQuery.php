@@ -45,25 +45,25 @@ class ProductQuery
         }
     }
 
-    public function Home()
+    public function home()
     {
         try {
-            $sql = "SELECT * FROM product where 1 ORDERBY id DESC LIMIT 0.9";
+            $sql = "SELECT * FROM product ORDER BY id DESC LIMIT 0,9";
             $data = $this->pdo->query($sql)->fetchAll();
 
             foreach ($data as $value) {
-                $product = new Product();
-                $product->id = $value['id'];
-                $product->name = $value['name'];
-                $product->price = $value['price'];
-                $product->img = $value['img'];
-                $product->description = $value['description'];
-                $product->view = $value['view'];
-                $product->idcategory = $value['idcategory'];
+                $homeProduct = new Product();
+                $homeProduct->id = $value['id'];
+                $homeProduct->name = $value['name'];
+                $homeProduct->price = $value['price'];
+                $homeProduct->img = $value['img'];
+                $homeProduct->description = $value['description'];
+                $homeProduct->view = $value['view'];
+                $homeProduct->idcategory = $value['idcategory'];
 
-                $list[] = $product;
+                $homeList[] = $homeProduct;
             }
-            return $list;
+            return $homeList;
         } catch (Exception $error) {
             echo "Error: " . $error->getMessage();
             echo "<br>";

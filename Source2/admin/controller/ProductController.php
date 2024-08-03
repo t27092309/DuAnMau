@@ -20,8 +20,8 @@ class ProductController
         include "view/product/list.php";
     }
     public function homeShowListProduct(){
-        $homeProductList = $this->productQuery->Home();
-        include "../view/home.php";
+        $homeProductList = $this->productQuery->home();
+        include "view/home.php";
     }
     public function showCreate()
     {

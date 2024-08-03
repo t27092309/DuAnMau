@@ -8,6 +8,21 @@
 </head>
 
 <body>
+<?php
+    $tbLoi = "";
+    if (isset($_POST["submit"])) {
+        $username = $_POST["username"];
+        $password = $_POST["password"];
+        if ($username == "admin" && $password == "1111") {
+
+            session_start();
+            $_SESSION["username"] = $username;
+            header("location:admin/index.php");
+        }else{
+            $tbLoi = "Tài khoản hoặc mật khẩu sai. Vui lòng thử lại";
+        }
+    }
+    ?>
     <form action="" method="post" enctype="multipart/form-data">
         <label for="username">Username</label>
         <input type="text" name="username" placeholder="Username">
@@ -17,18 +32,8 @@
         <br><br>
         <button type="submit" name="submit">Login</button>
     </form>
-    <?php
-    if (isset($_POST["submit"])) {
-        $username = $_POST["username"];
-        $password = $_POST["password"];
-        if ($username == "admin" && $password == "1111") {
+    <p style="color: red;"><?= $tbLoi ?></p>
 
-            session_start();
-            $_SESSION["username"] = $username;
-            header("location:admin/index.php");
-        }
-    }
-    ?>
 
 </body>
 

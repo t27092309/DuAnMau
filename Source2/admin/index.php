@@ -10,7 +10,6 @@ include_once "controller/ProductController.php";
 include "header.php";
 
 
-include "home.php";
 include "footer.php";
 
 
