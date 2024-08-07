@@ -1,8 +1,10 @@
-*{
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 1vw;
-}.container {
+* {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: 1vw;
+}
+
+.container {
 	width: 90%;
 	margin: 0 auto;
 }
@@ -42,7 +44,7 @@
 }
 
 .menu {
-	background-color: #18181a;
+	background-color: #272727;
 	color: #e2dfd2;
 	border-radius: 5px;
 }
@@ -64,15 +66,17 @@
 
 .menu ul li a:hover {
 	color: white;
-	font-size: larger;
-	transition: 0.5s;
+	background-color: #404040;
+	padding: 14px 0px;
 }
+
 .formContent input[type='text'] {
 	width: 100%;
 	border: 1px #CCC solid;
 	padding: 5px 10px;
 	border-radius: 5px;
 }
+
 .formContent input[type='submit'],
 .formContent input[type='reset'],
 .formContent input[type='button'] {
@@ -81,6 +85,7 @@
 	background-color: rgb(235, 235, 235);
 	border: 1px solid rgb(177, 177, 177);
 }
+
 .formContent input[type='button']:hover,
 .formContent input[type='submit']:hover,
 .formContent input[type='reset']:hover {

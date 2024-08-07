@@ -66,8 +66,7 @@
 
 .menu ul li a:hover {
 	color: white;
-	font-size: larger;
-	transition: 0.5s;
+
 }
 
 .lbox {
@@ -103,6 +102,13 @@
 
 .img img {
 	width: 80%;
+}
+.boxPro a p{
+	text-decoration: none;
+}
+.boxPro a{
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
 }
 
 .rbox {
