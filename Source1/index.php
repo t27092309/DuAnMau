@@ -17,11 +17,13 @@ if (isset($_GET['act'])) {
             header('location:index.php');
             break;
         case "lien-he":
-            include "admin/view/lienhe.php";
+            $proCtrl = new ProductController();
+            $proCtrl->homeLienHe();
             break;
 
         case "gioi-thieu":
-            include "admin/view/gioithieu.php";
+            $proCtrl = new ProductController();
+            $proCtrl->homeGioiThieu();
             break;
     }
 } else {

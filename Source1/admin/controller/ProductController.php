@@ -21,9 +21,18 @@ class ProductController
     }
     public function homeShowListProduct(){
         $homeProductList = $this->productQuery->all();
-        include "admin/view/home.php";
+        include "admin/view/client/home.php";
 
     }
+
+    public function homeLienHe(){
+        include "admin/view/client/lienhe.php";
+    }
+
+    public function homeGioiThieu(){
+        include "admin/view/client/gioithieu.php";
+    }
+    
     public function showCreate()
     {
         $product = new Product();
